@@ -1,0 +1,83 @@
+name: Volunteer application
+description: Choose a task, introduce yourself, and tell us what you want to build and learn.
+title: "[Volunteer] "
+labels:
+  - volunteer
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to Nerds Department 👋
+        You do not need years of experience to contribute. We care about curiosity, initiative, honesty, and reliability. Please do not share private contact details in this public issue.
+
+  - type: input
+    id: introduction
+    attributes:
+      label: Tell us about yourself
+      description: Your first name, what you study or explore, and your current stage.
+      placeholder: I am a second-year student interested in...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: role
+    attributes:
+      label: Which kind of task interests you most?
+      options:
+        - ML engineer / audio intelligence
+        - SMM / social media
+        - Marketing / partnerships
+        - Editor / writer
+        - Video editor
+        - Designer / web contributor
+        - I want to propose another task
+    validations:
+      required: true
+
+  - type: textarea
+    id: contribution
+    attributes:
+      label: What would you like to contribute?
+      description: Describe a task you want to own or an idea you want to test.
+      placeholder: I would like to build...
+    validations:
+      required: true
+
+  - type: textarea
+    id: experience
+    attributes:
+      label: What have you tried before?
+      description: Classes, personal experiments, school projects, volunteering, and unfinished attempts all count. Links are welcome.
+      placeholder: I have experimented with...
+    validations:
+      required: true
+
+  - type: textarea
+    id: learning
+    attributes:
+      label: What do you hope to learn?
+      placeholder: I want to become better at...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: time
+    attributes:
+      label: How much time can you realistically give each week?
+      options:
+        - 1–2 hours
+        - 3–5 hours
+        - 6–8 hours
+        - It changes week to week
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Working agreement
+      options:
+        - label: I understand this is a volunteer, nonprofit project and that applications are public.
+          required: true
+        - label: I will communicate early if I am blocked or cannot finish a task.
+          required: true
