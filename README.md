@@ -2,7 +2,7 @@
 
 Nerds Department is a nonprofit learning community for energetic school students and university students who want to learn, build meaningful projects, and gain experience that feels like real work.
 
-The repository contains the project website and the public volunteer application flow.
+The repository contains the multilingual project website and its shared volunteer application flow.
 
 ## Local preview
 
@@ -20,4 +20,4 @@ The workflow in `.github/workflows/pages.yml` deploys the site whenever changes 
 
 ## Volunteer applications
 
-The website sends applicants to the GitHub issue form in `.github/ISSUE_TEMPLATE/volunteer.yml`. Applications are public by design so contributors can discover one another and collaborate.
+Every volunteer call on the website sends applicants to one Google Form. The English, Russian, and Kazakh views share the same application destination, while the selected site language is saved in the visitor's browser and can also be shared with `?lang=ru` or `?lang=kk`.
